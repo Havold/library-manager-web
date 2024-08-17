@@ -1,0 +1,44 @@
+.table {
+    .tableCell {
+        text-align: center;
+
+        .cellWrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .bookCover {
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                object-fit: cover;
+                margin-right: 10px;
+            }
+        }
+
+        .status {
+            padding: 5px;
+            border-radius: 5px;
+
+            &.Approved {
+                background-color: rgba(0, 128, 0, 0.2);
+                color: green;
+            }
+
+            &.Overdue {
+                color: crimson;
+                background-color: rgba(255, 0, 0, 0.2);
+            }
+
+            &.Pending {
+                color: goldenrod;
+                background-color: rgba(218, 165, 32, 0.2);
+            }
+
+            &.Returned {
+                color: purple;
+                background-color: rgba(128, 0, 128, 0.2);
+            }
+        }
+    }
+}

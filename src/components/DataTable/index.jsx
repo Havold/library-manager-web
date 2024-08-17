@@ -7,7 +7,7 @@ function DataTable() {
         {
             field: 'action',
             headerName: 'Action',
-            width: 500,
+            width: 200,
             renderCell: () => {
                 return (
                     <div className="cellWithActions">
@@ -25,7 +25,7 @@ function DataTable() {
                 columns={userColumns.concat(actions)}
                 initialState={{
                     pagination: {
-                        paginationModel: { page: 0, pageSize: 5 },
+                        paginationModel: { page: 0, pageSize: 9 },
                     },
                 }}
                 pageSizeOptions={[5, 10]}

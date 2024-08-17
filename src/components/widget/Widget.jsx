@@ -12,7 +12,6 @@ function Widget({ type }) {
 
     // temporary
     const amount = 100;
-    const diff = 20;
 
     switch (type) {
         case 'users':

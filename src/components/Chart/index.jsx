@@ -1,5 +1,5 @@
 import './chart.scss';
-import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
+import { AreaChart, Area, XAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 
 const data = [
     { name: 'January', Total: 1200 },
@@ -10,11 +10,11 @@ const data = [
     { name: 'June', Total: 1700 },
 ];
 
-function Chart() {
+function Chart({ title, aspect }) {
     return (
         <div className="chart">
-            <div className="title">Last 6 months (Loans)</div>
-            <ResponsiveContainer width="100%" aspect={3 / 1}>
+            <div className="title">{title}</div>
+            <ResponsiveContainer width="100%" aspect={aspect}>
                 <AreaChart width={730} height={250} data={data} margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
                     <defs>
                         <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">

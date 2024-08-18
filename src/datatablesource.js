@@ -1,11 +1,9 @@
-import { type } from '@testing-library/user-event/dist/type';
-
 export const userColumns = [
     { field: 'id', headerName: 'ID', width: 70 },
     {
         field: 'user',
         headerName: 'User',
-        width: 320,
+        width: 280,
         renderCell: (params) => {
             return (
                 <div className="cellWithImg">
@@ -15,7 +13,7 @@ export const userColumns = [
             );
         },
     },
-    { field: 'email', headerName: 'Email', width: 320 },
+    { field: 'email', headerName: 'Email', width: 280 },
     { field: 'age', headerName: 'Age', width: 120 },
     {
         field: 'status',

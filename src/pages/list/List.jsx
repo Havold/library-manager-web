@@ -1,4 +1,3 @@
-import { TimeToLeave } from '@mui/icons-material';
 import DataTable from '../../components/DataTable';
 import Navbar from '../../components/navbar/Navbar';
 import Sidebar from '../../components/sidebar/Sidebar';

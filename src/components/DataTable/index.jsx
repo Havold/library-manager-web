@@ -34,7 +34,7 @@ function DataTable({ title, type }) {
                 columns={userColumns.concat(actions)}
                 initialState={{
                     pagination: {
-                        paginationModel: { page: 0, pageSize: 9 },
+                        paginationModel: { page: 0, pageSize: 10 },
                     },
                 }}
                 pageSizeOptions={[5, 10]}

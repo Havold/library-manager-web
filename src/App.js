@@ -5,7 +5,7 @@ import List from './pages/list/List';
 import Single from './pages/single/Single';
 import New from './pages/new/New';
 import { userInputs, bookInputs } from './formSource';
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 import { DarkModeContext } from './context/DarkModeContext';
 
 function App() {

@@ -16,7 +16,6 @@ function New({ inputs, title }) {
             file.preview = URL.createObjectURL(file);
             setImg(file);
             e.target.value = null;
-            console.log(img);
         }
     };
 
@@ -24,7 +23,6 @@ function New({ inputs, title }) {
         return () => {
             if (img) {
                 URL.revokeObjectURL(img.preview);
-                console.log('Cleanup');
             }
         };
     }, [img]);
@@ -59,7 +57,7 @@ function New({ inputs, title }) {
 
                             {inputs.map((item) => {
                                 return (
-                                    <div className="formInput">
+                                    <div key={item.id} className="formInput">
                                         <label>{item.label}</label>
                                         <input type={item.type} placeholder={item.placeholder} />
                                     </div>

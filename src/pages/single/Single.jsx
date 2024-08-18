@@ -3,7 +3,6 @@ import Sidebar from '../../components/sidebar/Sidebar';
 import './single.scss';
 import Chart from './../../components/Chart';
 import Table from './../../components/table/Table';
-import { ArrowBack } from '@mui/icons-material';
 import BackBtn from '../../components/BackBtn';
 
 function Single() {

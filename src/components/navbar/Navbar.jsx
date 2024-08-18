@@ -8,8 +8,12 @@ import {
     Tune,
 } from '@mui/icons-material';
 import './navbar.scss';
+import { DarkModeContext } from '../../context/DarkModeContext';
+import { useContext } from 'react';
 
 function Navbar() {
+    const { dispatch } = useContext(DarkModeContext);
+
     return (
         <div className="navbar">
             <div className="search">
@@ -21,7 +25,7 @@ function Navbar() {
                     <LanguageOutlined className="icon" />
                     <span>English</span>
                 </div>
-                <div className="item">
+                <div className="item" onClick={() => dispatch('TOGGLE')}>
                     <DarkModeOutlined className="icon" />
                 </div>
                 <div className="item">

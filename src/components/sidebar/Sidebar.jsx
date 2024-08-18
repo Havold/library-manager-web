@@ -13,9 +13,13 @@ import {
     SettingsRounded,
     SettingsSystemDaydreamRounded,
 } from '@mui/icons-material';
+import { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { DarkModeContext } from '../../context/DarkModeContext';
 
 function Sidebar() {
+    const { dispatch } = useContext(DarkModeContext);
+
     return (
         <div className="sidebar">
             <div className="top">
@@ -91,8 +95,8 @@ function Sidebar() {
                 </ul>
             </div>
             <div className="bottom">
-                <div className="colorOption"></div>
-                <div className="colorOption"></div>
+                <div className="colorOption" onClick={() => dispatch('LIGHT')}></div>
+                <div className="colorOption" onClick={() => dispatch('DARK')}></div>
             </div>
         </div>
     );

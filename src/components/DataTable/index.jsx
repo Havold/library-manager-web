@@ -39,6 +39,12 @@ function DataTable({ title, type }) {
                 }}
                 pageSizeOptions={[5, 10]}
                 checkboxSelection
+                className="dataGrid"
+                sx={{
+                    '& .MuiDataGrid-columnHeaders': {
+                        color: 'black', // Màu chữ của header
+                    },
+                }}
             />
         </div>
     );

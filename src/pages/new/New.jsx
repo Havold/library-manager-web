@@ -66,7 +66,7 @@ function New({ inputs, title }) {
                                 );
                             })}
                         </form>
-                        <button>Add</button>
+                        <button className="addBtn">Add</button>
                     </div>
                 </div>
             </div>

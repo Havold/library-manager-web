@@ -1,5 +1,103 @@
+:root {
+    --primary-dark: #8038fe;
+    --primary-hover-dark: #52289b;
+    --background-color-dark: #150933; // #111
+    --font-color-dark: rgb(220, 220, 220);
+    --border-color-dark: #333;
+}
+
 a[href] {
     text-decoration: none;
+}
+
+.dark {
+    background-color: var(--background-color-dark);
+    color: var(--font-color-dark);
+
+    .chartGrid {
+        stroke: rgba(228, 225, 225, 0.363);
+    }
+
+    .table {
+        background-color: var(--background-color-dark);
+
+        .tableCell {
+            color: var(--font-color-dark);
+        }
+    }
+
+    .navbar {
+        border-bottom-color: var(--border-color-dark);
+        // color: var(--font-color-dark);
+
+        .search {
+            border-color: var(--font-color-dark);
+
+            input {
+                color: var(--font-color-dark);
+            }
+
+            input::placeholder {
+                color: var(--font-color-dark);
+            }
+        }
+    }
+
+    .sidebar {
+        background-color: var(--background-color-dark);
+        border-right-color: var(--border-color-dark);
+
+        .top {
+            .logo {
+                color: var(--primary-dark);
+            }
+        }
+
+        .center {
+            ul {
+                li {
+                    color: var(--primary-dark);
+
+                    &:hover {
+                        background-color: var(--primary-hover-dark);
+                    }
+                }
+            }
+        }
+
+        hr {
+            border-color: var(--border-color-dark);
+        }
+    }
+
+    .dataTable {
+        h1 {
+            color: var(--font-color-dark);
+        }
+
+        .dataGrid {
+            color: var(--font-color-dark);
+
+            .view {
+                color: var(--primary-dark);
+                background-color: transparent;
+            }
+        }
+    }
+
+    .single {
+        .top {
+            .left {
+                h1 {
+                    color: var(--font-color-dark);
+                }
+
+                .itemValue {
+                    color: var(--font-color-dark);
+                }
+            }
+        }
+    }
 }
 
 .icon {

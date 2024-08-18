@@ -47,7 +47,7 @@ function Navbar() {
                 <div className="item">
                     <img
                         className="avatar"
-                        src="https://p16-sign-sg.tiktokcdn.com/aweme/1080x1080/tos-alisg-avt-0068/c14a92a8e2e23babececab98c0f67fac.jpeg?lk3s=a5d48078&nonce=18251&refresh_token=3552d81b0c37cd8bb3f477bf2c201f96&x-expires=1723978800&x-signature=OEItOocr5crSvDly0v%2FyUDkLEKQ%3D&shp=a5d48078&shcp=81f88b70"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7zEEISvcs1XuhHOPNI0aUElsa46Fmv5NLDg&s"
                         alt="avatar"
                     />
                 </div>

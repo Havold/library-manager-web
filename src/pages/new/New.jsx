@@ -1,8 +1,9 @@
-import { ArrowBack, DriveFolderUploadOutlined } from '@mui/icons-material';
+import { DriveFolderUploadOutlined } from '@mui/icons-material';
 import Navbar from '../../components/navbar/Navbar';
 import Sidebar from '../../components/sidebar/Sidebar';
 import './new.scss';
 import { useEffect, useState } from 'react';
+import BackBtn from '../../components/BackBtn';
 
 const defaultImg = 'https://i.pinimg.com/564x/37/08/99/3708994bdca38cd8dbea509f233f3cf4.jpg';
 
@@ -34,7 +35,7 @@ function New({ inputs, title }) {
             <div className="newContainer">
                 <Navbar />
                 <div className="top">
-                    <ArrowBack className="icon" />
+                    <BackBtn />
                     <h1>{title}</h1>
                 </div>
 

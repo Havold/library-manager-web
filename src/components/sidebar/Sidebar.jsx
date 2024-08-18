@@ -13,31 +13,39 @@ import {
     SettingsRounded,
     SettingsSystemDaydreamRounded,
 } from '@mui/icons-material';
+import { Link } from 'react-router-dom';
 
 function Sidebar() {
     return (
         <div className="sidebar">
             <div className="top">
-                <span className="logo">lamadmin</span>
+                <Link to="/">
+                    <span className="logo">lamadmin</span>
+                </Link>
             </div>
             <hr />
             <div className="center">
                 <ul>
                     <p className="title">MAIN</p>
-                    <li>
-                        <Dashboard className="icon" />
-                        <span>Dashboard</span>
-                    </li>
+                    <Link to="/">
+                        <li>
+                            <Dashboard className="icon" />
+                            <span>Dashboard</span>
+                        </li>
+                    </Link>
                     <p className="title">LIST</p>
-
-                    <li>
-                        <PersonOutlineRounded className="icon" />
-                        <span>Users</span>
-                    </li>
-                    <li>
-                        <AutoStories className="icon" />
-                        <span>Products</span>
-                    </li>
+                    <Link to="/users">
+                        <li>
+                            <PersonOutlineRounded className="icon" />
+                            <span>Users</span>
+                        </li>
+                    </Link>
+                    <Link to="/products">
+                        <li>
+                            <AutoStories className="icon" />
+                            <span>Products</span>
+                        </li>
+                    </Link>
                     <li>
                         <CreditCardRounded className="icon" />
                         <span>Orders</span>

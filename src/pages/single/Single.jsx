@@ -3,6 +3,8 @@ import Sidebar from '../../components/sidebar/Sidebar';
 import './single.scss';
 import Chart from './../../components/Chart';
 import Table from './../../components/table/Table';
+import { ArrowBack } from '@mui/icons-material';
+import BackBtn from '../../components/BackBtn';
 
 function Single() {
     return (
@@ -13,7 +15,10 @@ function Single() {
                 <div className="top">
                     <div className="left">
                         <div className="editBtn">Edit</div>
-                        <div className="title">Information</div>
+                        <div className="title">
+                            <BackBtn />
+                            Information
+                        </div>
                         <div className="item">
                             <img
                                 className="itemImg"

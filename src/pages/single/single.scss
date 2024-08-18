@@ -86,7 +86,9 @@
 
 .title {
     font-size: 16px;
-    color: lightgray;
+    color: gray;
     margin-bottom: 20px;
     font-weight: 600;
+    display: flex;
+    gap: 10px;
 }

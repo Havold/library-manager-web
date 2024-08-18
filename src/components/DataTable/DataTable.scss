@@ -1,4 +1,30 @@
 .dataTable {
+    .dataTableHeader {
+        display: flex;
+        padding: 10px 0;
+        align-items: center;
+        justify-content: space-between;
+
+        h1 {
+            font-size: 24px;
+            color: gray;
+        }
+
+        .newBtn {
+            font-size: 16px;
+            font-weight: bold;
+            padding: 8px 16px;
+            color: green;
+            background-color: rgba(0, 128, 0, 0.186);
+            border-radius: 4px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: rgba(0, 128, 0, 0.295);
+            }
+        }
+    }
+
     .cellWithImg {
         display: flex;
         align-items: center;
